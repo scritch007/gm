@@ -57,7 +57,7 @@ var _tanQ = [...]float32{
 //	Tan(±0) = ±0
 //	Tan(±Inf) = NaN
 //	Tan(NaN) = NaN
-func Tan(x float32) float32
+func Tan(x float32) float32 { return tan(x) }
 
 func tan(x float32) float32 {
 	const (

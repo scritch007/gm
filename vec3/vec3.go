@@ -1,6 +1,9 @@
 package vec3
 
-import "github.com/rkusa/gm/math32"
+import (
+	"fmt"
+	"github.com/scritch007/gm/math32"
+)
 
 type Vec3 [3]float32
 
@@ -60,4 +63,26 @@ func (lhs *Vec3) Sub(rhs *Vec3) *Vec3 {
 	lhs[1] -= rhs[1]
 	lhs[2] -= rhs[2]
 	return lhs
+}
+
+// Add adds the provided vector to the calling one. The result is
+// saved into the calling vector. Returns itself for function chaining.
+func (lhs *Vec3) Add(rhs *Vec3) *Vec3 {
+	lhs[0] += rhs[0]
+	lhs[1] += rhs[1]
+	lhs[2] += rhs[2]
+	return lhs
+}
+
+func (lhs *Vec3) MulInner(rhs *Vec3) float32 {
+	var p float32
+	p = 0.0
+	for i := 0; i < 3; i++ {
+		p += lhs[i] * rhs[i]
+	}
+	return p
+}
+
+func (lhs *Vec3) String() string {
+	return fmt.Sprintf("%f %f %f", lhs[0], lhs[1], lhs[2])
 }

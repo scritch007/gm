@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rkusa/gm/mat4"
+	"github.com/scritch007/gm/mat4"
 )
 
 func TestNew(t *testing.T) {

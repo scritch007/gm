@@ -7,7 +7,7 @@ func (lhs *Vec4) Div(rhs float32) *Vec4 {
 	return lhs
 }
 
-func divSIMD(lhs *Vec4, rhs float32)
+func divSIMD(lhs *Vec4, rhs float32) { div(lhs, rhs) }
 
 func div(lhs *Vec4, rhs float32) {
 	lhs[0] /= rhs

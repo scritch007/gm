@@ -12,7 +12,7 @@ func (lhs *Mat4) Mul(rhs *Mat4) *Mat4 {
 	return lhs
 }
 
-func mulSIMD(out, lhs, rhs *Mat4)
+func mulSIMD(out, lhs, rhs *Mat4) { mul(out, lhs, rhs) }
 
 func mul(out, lhs, rhs *Mat4) {
 	if lhs == out && rhs == out {

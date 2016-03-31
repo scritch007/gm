@@ -1,6 +1,6 @@
 package mat3
 
-import "github.com/rkusa/gm/mat4"
+import "github.com/scritch007/gm/mat4"
 
 type Mat3 [9]float32
 

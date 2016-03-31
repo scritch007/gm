@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"text/tabwriter"
 
-	"github.com/rkusa/gm/math32"
-	"github.com/rkusa/gm/vec3"
+	"github.com/scritch007/gm/math32"
+	"github.com/scritch007/gm/vec3"
 )
 
 type Mat4 [16]float32

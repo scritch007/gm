@@ -1,13 +1,13 @@
 package vec4
 
-import "github.com/rkusa/gm/math32"
+import "github.com/scritch007/gm/math32"
 
 // Len returns the vector length.
 func (lhs *Vec4) Len() float32 {
 	return lenSIMD(lhs)
 }
 
-func lenSIMD(lhs *Vec4) float32
+func lenSIMD(lhs *Vec4) float32 { return len(lhs) }
 
 func len(lhs *Vec4) float32 {
 	return math32.Sqrt(

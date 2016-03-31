@@ -6,7 +6,7 @@ func (lhs *Vec4) Add(rhs *Vec4) *Vec4 {
 	return lhs
 }
 
-func addSIMD(lhs, rhs *Vec4)
+func addSIMD(lhs, rhs *Vec4) { add(lhs, rhs) }
 
 func add(lhs, rhs *Vec4) {
 	lhs[0] += rhs[0]

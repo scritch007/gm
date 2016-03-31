@@ -1,6 +1,6 @@
 package vec4
 
-import "github.com/rkusa/gm/mat4"
+import "github.com/scritch007/gm/mat4"
 
 type Vec4 [4]float32
 

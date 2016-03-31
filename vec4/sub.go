@@ -6,7 +6,7 @@ func (lhs *Vec4) Sub(rhs *Vec4) *Vec4 {
 	return lhs
 }
 
-func subSIMD(lhs, rhs *Vec4)
+func subSIMD(lhs, rhs *Vec4) { sub(lhs, rhs) }
 
 func sub(lhs, rhs *Vec4) {
 	lhs[0] -= rhs[0]

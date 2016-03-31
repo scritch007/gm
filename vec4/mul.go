@@ -7,7 +7,7 @@ func (lhs *Vec4) Mul(rhs float32) *Vec4 {
 	return lhs
 }
 
-func mulSIMD(lhs *Vec4, rhs float32)
+func mulSIMD(lhs *Vec4, rhs float32) { mul(lhs, rhs) }
 
 func mul(lhs *Vec4, rhs float32) {
 	lhs[0] *= rhs

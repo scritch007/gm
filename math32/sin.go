@@ -62,7 +62,7 @@ var _cos = [...]float32{
 // Special cases are:
 //	Cos(±Inf) = NaN
 //	Cos(NaN) = NaN
-func Cos(x float32) float32
+func Cos(x float32) float32 { return cos(x) }
 
 func cos(x float32) float32 {
 	const (
@@ -119,7 +119,7 @@ func cos(x float32) float32 {
 //	Sin(±0) = ±0
 //	Sin(±Inf) = NaN
 //	Sin(NaN) = NaN
-func Sin(x float32) float32
+func Sin(x float32) float32 { return sin(x) }
 
 func sin(x float32) float32 {
 	const (
